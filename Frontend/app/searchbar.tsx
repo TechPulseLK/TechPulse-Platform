@@ -5,7 +5,7 @@ const Searchbar = () => {
   return (
     <div>
         
-    <form className='mt-32 ml-40 mr-36'>   
+    <form className='mt-32 mx-36'>   
         <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only ">Search</label>
         <div className="relative">
             <input type="text" id="default-search" className="block w-full p-3 ps-10 text-base text-gray-500 border border-gray-300 rounded-lg placeholder:text-gray-300 placeholder:text-base bg-white" placeholder="Search events by name or keyword" required/>

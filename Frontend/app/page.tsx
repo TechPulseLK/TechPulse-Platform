@@ -7,7 +7,7 @@ export default function Home() {
    <div>
     <Navbar/>
     <Searchbar></Searchbar>
-    <h1 className="text-4xl mt-20 font-medium text-center p-10">Home Page</h1>
+    <h1 className="text-2xl mt-20 font-base text-center p-10">Event cards will display here...</h1>
     <ProductCard></ProductCard>
    </div>
   )
