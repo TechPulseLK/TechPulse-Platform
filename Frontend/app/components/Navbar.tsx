@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import { FaPlus } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -11,7 +12,15 @@ const Navbar = () => {
             <span className="self-center text-2xl font-semibold whitespace-nowrap ">Techpulse</span>
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button type="button" className="text-white bg-primary hover:bg-primary focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold rounded-md text-sm px-4 py-2 text-center">Sign in</button>
+            <Link href="#">
+            <div className='flex py-2 mr-6'>
+              <div className='pr-3 pt-1 text-gray-500'>
+                  <FaPlus/>
+              </div>
+              <span className='text-base font-medium text-gray-500'>Place Your Event</span>
+            </div>
+            </Link>
+            <button type="button" className="text-white bg-primary hover:bg-primary font-semibold rounded-md text-sm px-4 py-2 text-center">Register Now</button>
             
             {/* mobile hamburger icon */}
             <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
@@ -20,22 +29,7 @@ const Navbar = () => {
                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
                   </svg>
             </button>
-          </div>
-          <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
-              <li>
-                  <a href="#" className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 " aria-current="page">Home</a>
-              </li>
-              <li>
-                  <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">About</a>
-              </li>
-              <li>
-                <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Services</a>
-              </li>
-              <li>
-                  <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Contact</a>
-              </li>
-            </ul>
+
           </div>
         </div>
       </nav>
